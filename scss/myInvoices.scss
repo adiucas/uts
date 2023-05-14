@@ -1,0 +1,102 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+
+#InvoiceDue{
+	.accordion-body{
+		padding: 1rem;
+	}
+}
+
+.dataContainer{
+	background: #fff;
+	padding: 30px;
+	border-radius: 15px;
+
+	.input-group-text{
+		background: unset;
+		padding-right: unset;
+	}
+	.searchInput{
+		border-left: unset;
+		&:focus{
+		    border-color: #ced4da;
+		    box-shadow: unset;
+		}
+	}
+
+	.tableContainer{
+		.table{
+			margin-top: 15px;
+		}
+	}
+}
+
+.table{
+    .thead,.tbody{
+        .tr{
+            .th,.td{
+                flex-basis: 20%;
+
+                &:nth-child(1){
+                	flex-basis: 12%;
+
+                	@media(max-width:1300px){
+                		flex-basis: 21%;
+                	}
+                }
+                &:nth-child(2){
+                	flex-basis: 30%;
+                }
+                &:nth-child(3){
+                	flex-basis: 30%;
+                }
+                &:nth-child(4){
+                	flex-basis: 16%;
+
+                }
+                &:nth-child(5){
+                	flex-basis: 10%;
+
+                	@media(max-width:1300px){
+                		flex-basis: 15%;
+                	}
+                }
+                &:nth-child(6){
+                	flex-basis: 13%;
+
+                	@media(max-width:1300px){
+                		flex-basis: 24%;
+                	}
+                }
+            }
+            .td{
+            	@media(max-width:1300px){
+            		font-size: .875rem;
+            	}
+            	&:nth-child(6){
+            		font-size: 1.75rem;
+            		color: $primCol;
+            	}
+            }
+        }
+    }
+}
+
+.showAmount{
+	@include flex(row, null, center);
+	label{
+		margin-right: 10px;
+	}
+	.form-select{
+		width: unset;
+	}
+}
+
+.pageNum{
+	@include flex(row,end,center);
+
+	.pagination{
+		margin-bottom: 0;
+	}
+}

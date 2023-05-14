@@ -1,0 +1,166 @@
+.ticket-info-container {
+  padding: 0;
+}
+.ticket-info-container .single-info {
+  padding: 0.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+.ticket-info-container .single-info:not(:last-child) {
+  border-bottom: 1px solid rgba(8, 160, 57, 0.25);
+}
+.ticket-info-container .single-info .title {
+  font-family: "Gantari", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #08A039;
+  line-height: 1;
+}
+
+.update-btn-container .accordion-item {
+  margin-top: -5px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.update-btn-container .accordion-item .accordion-body {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.update-btn-container .accordion-item .accordion-body button {
+  flex-shrink: 0;
+}
+
+.cust-card .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cust-card .header .title-subject .title {
+  font-family: "Gantari", sans-serif;
+  font-weight: 700;
+  color: #08A039;
+  font-size: 1.75rem;
+  line-height: 1;
+}
+.cust-card .posted-by {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #EEEEEE;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  margin-top: 0.75rem;
+}
+.cust-card .posted-by .info .name {
+  font-weight: bold;
+}
+.cust-card .posted-by .role {
+  font-size: 0.75rem;
+  background: #009999;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  color: #fff;
+}
+.cust-card .posted-by.client .role {
+  background: #08A039;
+}
+.cust-card .operator-reply, .cust-card .client-reply {
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(8, 160, 57, 0.25);
+  white-space: pre-line;
+}
+.cust-card .client-reply {
+  white-space: unset;
+}
+.cust-card .client-reply .message {
+  white-space: pre-line;
+}
+.cust-card .client-ip {
+  margin-top: 1rem;
+}
+.cust-card .client-ip input {
+  background: rgba(8, 160, 57, 0.1);
+  border: 1px solid rgba(8, 160, 57, 0.25);
+  border-radius: 0.375rem;
+}
+.cust-card .client-attachment {
+  margin-top: 1rem;
+  background: rgba(8, 160, 57, 0.1);
+  border: 1px solid rgba(8, 160, 57, 0.25);
+  border-radius: 0.375rem;
+  padding: 0.75rem;
+}
+.cust-card .client-attachment .title {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.75);
+}
+.cust-card .client-attachment .title:after {
+  display: block;
+  width: 100%;
+  content: "";
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+.cust-card .client-attachment .attachments {
+  margin-top: 0.5rem;
+}
+.cust-card .client-attachment .attachments .attachment-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #009999;
+  padding: 0.5rem;
+  color: #fff;
+  border-radius: 0.375rem;
+}
+.cust-card .client-attachment .attachments .attachment-container:not(:last-child) {
+  margin-bottom: 1rem;
+}
+@media (max-width: 992px) {
+  .cust-card .client-attachment .attachments .attachment-container .icon-name {
+    display: flex;
+    flex-direction: row;
+  }
+  .cust-card .client-attachment .attachments .attachment-container .icon-name span {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.cust-card .client-attachment .attachments .attachment-container .download-icon {
+  margin-right: 0.5rem;
+}
+@media (max-width: 992px) {
+  .cust-card .client-attachment .attachments .attachment-container .download-icon {
+    display: none;
+  }
+}
+
+.reply {
+  margin-top: 1rem;
+}
+.reply .title {
+  font-family: "Gantari", sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 1;
+  color: #08A039;
+  margin-bottom: 1rem;
+}
+.reply .title:after {
+  display: block;
+  content: "";
+  width: 100%;
+  background: rgba(8, 160, 57, 0.25);
+  height: 2px;
+  border-radius: 1rem;
+  margin-top: 0.375rem;
+}
+
+#ticketAttachmentContainer .input-group:not(:nth-child(2)) {
+  margin-top: 15px;
+}/*# sourceMappingURL=viewTicket.css.map */

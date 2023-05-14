@@ -1,0 +1,91 @@
+#InvoiceDue .accordion-body {
+  padding: 1rem;
+}
+
+.dataContainer {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+}
+.dataContainer .input-group-text {
+  background: unset;
+  padding-right: unset;
+}
+.dataContainer .searchInput {
+  border-left: unset;
+}
+.dataContainer .searchInput:focus {
+  border-color: #ced4da;
+  box-shadow: unset;
+}
+.dataContainer .tableContainer .table {
+  margin-top: 15px;
+}
+
+.table .thead .tr .th, .table .thead .tr .td, .table .tbody .tr .th, .table .tbody .tr .td {
+  flex-basis: 20%;
+}
+.table .thead .tr .th:nth-child(1), .table .thead .tr .td:nth-child(1), .table .tbody .tr .th:nth-child(1), .table .tbody .tr .td:nth-child(1) {
+  flex-basis: 12%;
+}
+@media (max-width: 1300px) {
+  .table .thead .tr .th:nth-child(1), .table .thead .tr .td:nth-child(1), .table .tbody .tr .th:nth-child(1), .table .tbody .tr .td:nth-child(1) {
+    flex-basis: 21%;
+  }
+}
+.table .thead .tr .th:nth-child(2), .table .thead .tr .td:nth-child(2), .table .tbody .tr .th:nth-child(2), .table .tbody .tr .td:nth-child(2) {
+  flex-basis: 30%;
+}
+.table .thead .tr .th:nth-child(3), .table .thead .tr .td:nth-child(3), .table .tbody .tr .th:nth-child(3), .table .tbody .tr .td:nth-child(3) {
+  flex-basis: 30%;
+}
+.table .thead .tr .th:nth-child(4), .table .thead .tr .td:nth-child(4), .table .tbody .tr .th:nth-child(4), .table .tbody .tr .td:nth-child(4) {
+  flex-basis: 16%;
+}
+.table .thead .tr .th:nth-child(5), .table .thead .tr .td:nth-child(5), .table .tbody .tr .th:nth-child(5), .table .tbody .tr .td:nth-child(5) {
+  flex-basis: 10%;
+}
+@media (max-width: 1300px) {
+  .table .thead .tr .th:nth-child(5), .table .thead .tr .td:nth-child(5), .table .tbody .tr .th:nth-child(5), .table .tbody .tr .td:nth-child(5) {
+    flex-basis: 15%;
+  }
+}
+.table .thead .tr .th:nth-child(6), .table .thead .tr .td:nth-child(6), .table .tbody .tr .th:nth-child(6), .table .tbody .tr .td:nth-child(6) {
+  flex-basis: 13%;
+}
+@media (max-width: 1300px) {
+  .table .thead .tr .th:nth-child(6), .table .thead .tr .td:nth-child(6), .table .tbody .tr .th:nth-child(6), .table .tbody .tr .td:nth-child(6) {
+    flex-basis: 24%;
+  }
+}
+@media (max-width: 1300px) {
+  .table .thead .tr .td, .table .tbody .tr .td {
+    font-size: 0.875rem;
+  }
+}
+.table .thead .tr .td:nth-child(6), .table .tbody .tr .td:nth-child(6) {
+  font-size: 1.75rem;
+  color: #08A039;
+}
+
+.showAmount {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.showAmount label {
+  margin-right: 10px;
+}
+.showAmount .form-select {
+  width: unset;
+}
+
+.pageNum {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+}
+.pageNum .pagination {
+  margin-bottom: 0;
+}/*# sourceMappingURL=myInvoices.css.map */

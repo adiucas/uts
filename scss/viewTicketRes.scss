@@ -1,0 +1,32 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+@media(max-width: 992px){
+    .cust-card{
+        padding: 1.5rem;
+        .header{
+            @include flex(col,center,center);
+
+            .title-subject{
+                .title{
+                    text-align: center;
+                }
+            }
+
+            .buttons{
+                margin-top: .5rem;
+            }
+        }
+
+        .posted-by{
+            &.client{
+                @include flex(col);
+
+                .role{
+                    margin-top: .5rem;
+                }
+            }
+        }
+    }
+}
+

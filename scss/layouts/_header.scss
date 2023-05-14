@@ -1,0 +1,63 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+.logo-user-container{
+	@include flex(row,space-between,center);
+	background: var(--bs-light);
+	padding: (1rem/2) 1rem;
+	border-bottom: 1px solid rgba(black,10%);
+
+	img{
+		max-height: 50px;
+	}
+
+	.input-group{
+		margin: 0 1rem;
+
+		.input-group-text{
+			background-color: $secCol;
+			color:$lpCol;
+		}
+	}
+
+	.btn-group{
+		.btn-primary{
+			text-transform: capitalize;;
+		}
+	}
+	
+}
+
+.dropdown-menu[data-bs-popper]{
+	background: $lpCol;
+	top: 40px;
+	border: 1px solid rgba($primCol,25%);
+
+	.dropdown-item{
+		&:hover{
+			color: darken($primCol, 10%);
+			background: rgba($primCol,15%);
+		}
+	}
+}
+
+.navbar{
+	background: linear-gradient(90deg, rgba(14,137,68,1) 0%, rgba(0,153,153,1) 50%, rgba(14,137,68,1) 100%);
+	--bs-navbar-padding-y:0;
+
+	.navbar-collapse{
+		justify-content: center;
+	}
+
+	.nav-link{
+		color: $lpCol;
+
+		&.active{
+			color:$lpCol;
+			// background: $lpCol;
+		}
+	}
+}
+
+
+@import "headerResponsive";

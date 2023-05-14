@@ -1,0 +1,39 @@
+@media (max-width: 992px){
+	.table{
+	    .thead{
+	    	display:none;
+	    }
+
+	    .tbody{
+	        .tr{
+	            @include flex(col,center,center);
+	            text-align: center;
+	            font-size: 14px;
+
+	            .td{
+	            	padding: 0;
+	            	margin: 5px 0;
+	            }
+
+
+	            .th-sm{
+	                @include head();
+	                color: $primCol;
+	                font-size: 16px;
+	            }
+	        }
+	    }
+	}
+}
+
+@media (min-width: 992px){
+	.table{
+	    .tbody{
+	        .tr{
+	            .th-sm{
+	            	display: none;
+	            }
+	        }
+	    }
+	}
+}

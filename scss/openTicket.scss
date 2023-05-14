@@ -1,0 +1,66 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+.update-btn-container{
+	.accordion-item{
+		margin-top: -5px;
+		border-top-right-radius: 0;
+		border-top-left-radius: 0;
+		.accordion-body{
+			padding-top: (1rem/2) + em(8);
+		}
+	}
+}
+
+
+.accordion.recentTickets{
+	.shortcutMenu{
+		display: block;
+
+		i{
+			margin-right: 5px;
+		}
+	}
+}
+	
+
+.recentTickets{
+	.ticketTitle{
+		@include flex(row,null,center);
+	}
+
+	.statusTime{
+		@include flex(row,space-between,center);
+		font-size: 14px;
+		margin-top: 5px;
+	}
+}
+
+.supportRequestForm{
+	background: #ffffff;
+	padding: 30px;
+	border-radius: 15px;
+
+	.title{
+		@include head();
+		font-size: 24px;
+		color: rgba(#000,50%);
+
+		&:after{
+			content:"";
+			background: rgba(#000000,25%);
+			height: 2px;
+			width:100%;
+			display: block;
+			border-radius:50px;
+		}
+	}
+}
+
+#ticketAttachmentContainer{
+	.input-group{
+		&:not(:nth-child(2)){
+			margin-top: 15px;
+		}
+	}
+}

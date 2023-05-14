@@ -1,0 +1,39 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+.product-wrapper{
+	.col-lg-6{
+		@include flex(row);
+	}
+}
+
+.product-container{
+	@include flex(col,center,center);
+	background: #fff;
+	padding: 30px;
+	border-radius: .375rem;
+	text-align: center;
+	color: $primCol;
+	transition: 0.3s all;
+	width: 100%;
+
+	&:hover{
+		background: $secCol;
+		color: $lpCol;
+	}
+
+	h1{
+		@include head("900");
+		line-height: 1;
+	}
+
+	img{
+		width: 100%;
+		max-width: 300px;
+	}
+
+	.product-description{
+		margin-top: 5px;
+		line-height: 1.2;
+	}
+}

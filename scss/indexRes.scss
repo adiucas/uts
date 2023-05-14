@@ -1,0 +1,48 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+@media (max-width: 992px){
+	.dashboardCounters{
+		.counterCard{
+			padding: 20px;
+			.number{
+				font-size: 36px;
+			}
+			.title{
+				margin-top: 0px;
+			}
+			img{
+				position: absolute;
+				bottom: -10px;
+				width: 120px;
+				right: -15px;
+			}
+			i{
+				font-size: 24px;
+			}
+		}
+	}
+	.atAglance{
+		.detailsCard{
+			.title{
+				font-size: 16px;
+			}
+
+			.productBlock{
+				div{
+					font-size:14px;
+				}
+
+				.ticketText{
+					.title{
+						font-size: 14px !important;
+					}
+					.info{
+						font-size: 10px !important;
+					}
+				}
+			}
+		}
+	}
+}
+

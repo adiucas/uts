@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Services | UCAS Ticketing System</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gantari:wght@300;700;900&family=M+PLUS+2:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	
+	<!-- css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/myServices.css">
+	<link rel="stylesheet" href="css/myServicesRes.css">
+</head>
+<body>
+	<!--============================
+	=            header            =
+	=============================-->
+	<header data-include="header"></header>
+
+	<!--==========================
+	=            body            =
+	===========================-->
+	<section class="container-fluid">
+		<div class="row">
+			<div class="col-lg-3 order-last order-lg-first">
+				<!-- Filter -->
+				<div class="sideAccordionWrapper d-none d-lg-block">
+					<div class="accordion shortcuts" id="filter">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="FilterHeading">
+								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#filterCollapse" aria-expanded="true" aria-controls="filterCollapse">
+									<i class="bi bi-funnel me-2"></i>
+									<span>Filter</span>
+								</button>
+							</h2>
+							<div id="filterCollapse" class="accordion-collapse collapse show" aria-labelledby="FilterHeading" data-bs-parent="#filter">
+								<div class="accordion-body">
+									<div class=" option-wrapper">
+										<div class="option-wrapper-inside">
+											<input type="radio" name="select" id="option-1">
+											<label for="option-1" class="option option-1 mr-lg-3 mb-2 mb-lg-0 justify-content-between">
+												<div class="d-flex align-items-center">
+													<div class="dot-wrapper">
+														<div class="dot"></div>
+													</div>
+													<span>Active</span>
+												</div>
+												<span class="badge text-bg-light float-end me-2">0</span>
+											</label>
+										</div>
+										<div class="option-wrapper-inside">
+											<input type="radio" name="select" id="option-2">
+											<label for="option-2" class="option option-2 mr-lg-3 mb-2 mb-lg-0 justify-content-between">
+												<div class="d-flex align-items-center">
+													<div class="dot-wrapper">
+														<div class="dot"></div>
+													</div>
+													<span>Pending</span>
+												</div>
+												<span class="badge text-bg-light float-end me-2">0</span>
+											</label>
+										</div>
+										<div class="option-wrapper-inside">
+											<input type="radio" name="select" id="option-3">
+											<label for="option-3" class="option option-3 mr-lg-3 mb-2 mb-lg-0 justify-content-between">
+												<div class="d-flex align-items-center">
+													<div class="dot-wrapper">
+														<div class="dot"></div>
+													</div>
+													<span>Suspended</span>
+												</div>
+												<span class="badge text-bg-light float-end me-2">0</span>
+											</label>
+										</div>
+										<div class="option-wrapper-inside">
+											<input type="radio" name="select" id="option-4">
+											<label for="option-4" class="option option-4 mr-lg-3 mb-2 mb-lg-0 justify-content-between">
+												<div class="d-flex align-items-center">
+													<div class="dot-wrapper">
+														<div class="dot"></div>
+													</div>
+													<span>Terminated</span>
+												</div>
+												<span class="badge text-bg-light float-end me-2">10</span>
+											</label>
+										</div>
+										<div class="option-wrapper-inside">
+											<input type="radio" name="select" id="option-5">
+											<label for="option-5" class="option option-5 mr-lg-3 mb-2 mb-lg-0 justify-content-between">
+												<div class="d-flex align-items-center">
+													<div class="dot-wrapper">
+														<div class="dot"></div>
+													</div>
+													<span>Cancelled</span>
+												</div>
+												<span class="badge text-bg-light float-end me-2">10</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- support -->
+				<div class="sideAccordionWrapper">
+					<div class="accordion shortcuts" id="shortcuts">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="shortcutHeading">
+								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#shortcutCollapse" aria-expanded="true" aria-controls="shortcutCollapse">
+									<i class="fa-solid fa-share-from-square me-2"></i>
+									<span>Support</span>
+								</button>
+							</h2>
+							<div id="shortcutCollapse" class="accordion-collapse collapse show" aria-labelledby="shortcutHeading" data-bs-parent="#shortcuts">
+								<div class="accordion-body">
+									<a class="shortcutMenu" href="mySupportTickets.html">
+										<i class="bi bi-ticket-detailed me-2"></i>
+										<span>My Support Tickets</span>
+									</a>
+									<!-- <a class="shortcutMenu" href="javascript:void(0)">
+										<i class="bi bi-megaphone me-2"></i>
+										<span>Announcements</span>
+									</a> -->
+									<a class="shortcutMenu" href="javascript:void(0)">
+										<i class="bi bi-info-circle me-2"></i>
+										<span>Knowledgebase</span>
+									</a>
+									<!-- <a class="shortcutMenu" href="javascript:void(0)">
+										<i class="bi bi-download me-2"></i>
+										<span>Downloads</span>
+									</a>
+									<a class="shortcutMenu" href="javascript:void(0)">
+										<i class="bi bi-hdd-network me-2"></i>
+										<span>Network Status</span>
+									</a> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-9 my-3">
+				<div class="sideAccordionWrapper d-block d-lg-none">
+					<div class="accordion shortcuts" id="filterMobile">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="FilterMobileHeading">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filterMobileCollapse" aria-expanded="false" aria-controls="filterMobileCollapse">
+									<i class="bi bi-funnel me-2"></i>
+									<span>Filter</span>
+								</button>
+							</h2>
+							<div id="filterMobileCollapse" class="accordion-collapse collapse" aria-labelledby="FilterMobileHeading" data-bs-parent="#filterMobile">
+								<div class="accordion-body">
+									<div class=" option-wrapper">
+										<div class="option-wrapper-inside">
+											<input type="radio" name="select" id="option-1m">
+											<label for="option-1m" class="option option-1m mr-lg-3 justify-content-between">
+												<div class="d-flex align-items-center">
+													<div class="dot-wrapper">
+														<div class="dot"></div>
+													</div>
+													<span>Active</span>
+												</div>
+												<span class="badge text-bg-light float-end me-2">0</span>
+											</label>
+										</div>
+										<div class="option-wrapper-inside">
+											<input type="radio" name="select" id="option-2m">
+											<label for="option-2m" class="option option-2m mr-lg-3 justify-content-between">
+												<div class="d-flex align-items-center">
+													<div class="dot-wrapper">
+														<div class="dot"></div>
+													</div>
+													<span>Pending</span>
+												</div>
+												<span class="badge text-bg-light float-end me-2">0</span>
+											</label>
+										</div>
+										<div class="option-wrapper-inside">
+											<input type="radio" name="select" id="option-3m">
+											<label for="option-3m" class="option option-3m mr-lg-3 justify-content-between">
+												<div class="d-flex align-items-center">
+													<div class="dot-wrapper">
+														<div class="dot"></div>
+													</div>
+													<span>Suspended</span>
+												</div>
+												<span class="badge text-bg-light float-end me-2">0</span>
+											</label>
+										</div>
+										<div class="option-wrapper-inside">
+											<input type="radio" name="select" id="option-4m">
+											<label for="option-4m" class="option option-4m mr-lg-3 justify-content-between">
+												<div class="d-flex align-items-center">
+													<div class="dot-wrapper">
+														<div class="dot"></div>
+													</div>
+													<span>Terminated</span>
+												</div>
+												<span class="badge text-bg-light float-end me-2">10</span>
+											</label>
+										</div>
+										<div class="option-wrapper-inside">
+											<input type="radio" name="select" id="option-5m">
+											<label for="option-5m" class="option option-5m mr-lg-3 justify-content-between">
+												<div class="d-flex align-items-center">
+													<div class="dot-wrapper">
+														<div class="dot"></div>
+													</div>
+													<span>Cancelled</span>
+												</div>
+												<span class="badge text-bg-light float-end me-2">10</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="dataContainer">
+					<div class="row">
+						<div class="col-lg-8 align-self-center text-center text-lg-start order-last order-lg-first">
+							Showing 1 to 8 of 8 entries
+						</div>
+						<div class="col-lg-4">
+							<div class="input-group mb-2 mb-lg-0">
+								<span class="input-group-text" id="basic-addon2">
+									<i class="bi bi-search"></i>
+								</span>
+								<input type="text" class="form-control searchInput" placeholder="Search Here" aria-label="Recipient's username" aria-describedby="basic-addon2">
+							</div>
+						</div>
+					</div>
+					<div class="tableContainer">
+						<div class="table">
+							<div class="thead">
+								<div class="tr">
+									<div class="th">Product/Service</div>
+									<div class="th">Due Amount</div>
+									<div class="th">Due Month</div>
+									<div class="th">Next Due Date</div>
+									<div class="th">Status</div>
+								</div>
+							</div>
+							<div class="tbody">
+								<div class="tr">
+									<div class="td">
+										<div class="th-sm">Product/Service</div>
+										<div class="data">
+											<img src="images/productLogo/ubroker-dark.png">
+											<div class="product-name">a back office ERP</div>
+										</div>
+									</div>
+									<div class="td">
+										<div class="th-sm">Due Amount</div>
+										<span>BDT 7,995TK Annually</span>
+									</div>
+									<div class="td">
+										<div class="th-sm">Due Month</div>
+										<span>January 2022 - February 2023</span>
+									</div>
+									<div class="td">
+										<div class="th-sm">Next Due Date</div>
+										<span>Friday, February 17th, 2023</span>
+									</div>
+									<div class="td">
+										<div class="th-sm">Status</div>
+										<span class="badge bg-success">Active</span>
+									</div>
+								</div>
+								<div class="tr">
+									<div class="td">
+										<div class="th-sm">Product/Service</div>
+										<div class="data">
+											<img src="images/productLogo/abashon.png">
+											<div class="product-name">a real-estate ERP</div>
+										</div>
+									</div>
+									<div class="td">
+										<div class="th-sm">Due Amount</div>
+										<span>BDT 7,995TK Annually</span>
+									</div>
+									<div class="td">
+										<div class="th-sm">Due Month</div>
+										<span>January 2022 - February 2023</span>
+									</div>
+									<div class="td">
+										<div class="th-sm">Next Due Date</div>
+										<span>Friday, February 17th, 2023</span>
+									</div>
+									<div class="td">
+										<div class="th-sm">Status</div>
+										<span class="badge bg-success">Active</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row g-3 mt-3">
+						<div class="col-lg-6 showAmount">
+							<label>Show</label>
+							<select class="form-select">
+							  <option selected value="1">10</option>
+							  <option value="2">20</option>
+							  <option value="3">All</option>
+							</select>
+						</div>
+						<div class="col-lg-6 pageNum">
+							<nav aria-label="Page navigation example">
+							  <ul class="pagination">
+							    <li class="page-item">
+							      <a class="page-link" href="#" aria-label="Previous">
+							        <span aria-hidden="true">&laquo;</span>
+							      </a>
+							    </li>
+							    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+							    <li class="page-item"><a class="page-link" href="#">2</a></li>
+							    <li class="page-item"><a class="page-link" href="#">3</a></li>
+							    <li class="page-item">
+							      <a class="page-link" href="#" aria-label="Next">
+							        <span aria-hidden="true">&raquo;</span>
+							      </a>
+							    </li>
+							  </ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--============================
+	=            footer            =
+	=============================-->
+	<div data-include="footer" class="pt15"></div>
+</body>
+<!-- scripts -->
+<script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/main.js"></script>
+</html>

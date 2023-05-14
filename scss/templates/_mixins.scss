@@ -1,0 +1,53 @@
+@mixin flex($param1, $param2:null, $param3:null){
+	@if $param1 == "row"{
+		display: flex;
+		flex-direction: row;
+		justify-content: $param2;
+		align-items: $param3;
+	}
+	@else if $param1 == "col"{
+		display: flex;
+		flex-direction: column;
+		justify-content: $param2;
+		align-items: $param3;
+	}
+}
+
+@mixin head($weight:null){
+	@if $weight == "900" {
+		font-family: $headFF;
+		font-weight: 900;
+	}
+	@else{
+		font-family: $headFF;
+		font-weight: 700;
+	}
+	
+}
+
+@mixin para{
+	font-family: $paraFF;
+}
+
+@function grad($direction:'135deg', $startColor:$primCol, $endColor:$secCol){
+	$gradRes: linear-gradient(#{$direction}, #{$startColor} 0%, #{$endColor} 100%);
+	@return $gradRes;
+}
+
+$browser-context:16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return $pixels/$context;
+}
+
+@mixin max992{
+    @media(max-width:992px){
+        @content;
+    }
+}
+
+@mixin min992{
+    @media(min-width:992px){
+        @content;
+    }
+}

@@ -1,0 +1,88 @@
+.update-btn-container .accordion-item {
+  margin-top: -5px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.update-btn-container .accordion-item .accordion-body {
+  padding-top: 1rem;
+}
+
+.accordion.recentTickets .shortcutMenu {
+  display: block;
+}
+.accordion.recentTickets .shortcutMenu i {
+  margin-right: 5px;
+}
+
+.recentTickets .ticketTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.recentTickets .statusTime {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.account-details-form {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+}
+.account-details-form .title {
+  font-family: "Gantari", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #08a039;
+}
+.account-details-form .title:after {
+  content: "";
+  background: rgba(8, 160, 57, 0.25);
+  height: 2px;
+  width: 100%;
+  display: block;
+  border-radius: 50px;
+}
+
+#ticketAttachmentContainer .input-group:not(:nth-child(2)) {
+  margin-top: 15px;
+}
+
+.join-mailing-list .switch-wrapper {
+  cursor: pointer;
+  border-radius: 0.375rem;
+  background: rgba(8, 160, 57, 0.25);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.join-mailing-list .switch-wrapper .form-check {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+.join-mailing-list .switch-wrapper .form-check-input {
+  width: 3em;
+  height: 1.5em;
+  cursor: pointer;
+  padding: 5px 0 5px 10px;
+}
+.join-mailing-list .switch-wrapper label {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.75);
+  width: 60px;
+  padding: 10px 10px 10px 10px;
+}
+
+.form-check-input:checked {
+  background-color: green;
+  border-color: green;
+}
+
+.form-check-input:focus {
+  box-shadow: unset;
+}/*# sourceMappingURL=accountDetails.css.map */

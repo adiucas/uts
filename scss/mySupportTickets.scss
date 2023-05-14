@@ -1,0 +1,64 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+.dataContainer{
+	background: #fff;
+	padding: 30px;
+	border-radius: 15px;
+
+	.input-group-text{
+		background: unset;
+		padding-right: unset;
+	}
+	.searchInput{
+		border-left: unset;
+		&:focus{
+		    border-color: #ced4da;
+		    box-shadow: unset;
+		}
+	}
+
+	.tableContainer{
+		.table{
+			margin-top: 15px;
+		}
+	}
+}
+
+.table{
+    .thead,.tbody{
+        .tr{
+            .th,.td{
+                flex-basis: 25%;
+
+                &:nth-child(2){
+                	flex-basis: 60%;
+                }
+                &:nth-child(3){
+                	flex-basis: 15%;
+                }
+                &:nth-child(4){
+                	flex-basis: 60%;
+                }
+            }
+        }
+    }
+}
+
+.showAmount{
+	@include flex(row, null, center);
+	label{
+		margin-right: 10px;
+	}
+	.form-select{
+		width: unset;
+	}
+}
+
+.pageNum{
+	@include flex(row,end,center);
+
+	.pagination{
+		margin-bottom: 0;
+	}
+}
